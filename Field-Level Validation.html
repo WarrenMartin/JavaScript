@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <style>
+            span{
+                color: red;
+            }
+        </style>
+        <script>
+            function validateName(){
+                var un=document.getElementById("uname")
+                if(un.value.length<5 || un.value.length>10){
+                    document.getElementById("s1").innerHTML="Name should be 5-10 ch only"
+                   un.focus();
+                }
+                else{
+                    document.getElementById("s1").innerHTML=""
+
+                }
+                
+                
+            }
+
+            function validatePass(){
+                var pass=document.getElementById("pass")
+                if(pass.value.length<7){
+                    document.getElementById("s2").innerHTML="Password must be greater then 7 character"
+                    pass.focus();
+                }
+               
+            }
+
+           
+        </script>
+    </head>
+
+    <body>
+       <form >
+        username: <input  autofocus type="text" id="uname" required onchange="validateName()"><span id="s1"></span><br>
+        Password: <input   type="password" id="pass" onchange="validatePass()" required><span id="s2"></span><br>
+        <input type="button" value="onchange">
+       </form>  
+    </body>
+
+</html>
