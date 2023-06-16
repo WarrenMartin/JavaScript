@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <style>
+            span{
+                color: red;
+            }
+        </style>
+        <script>
+            function validateName(){
+                var un=document.getElementById("uname").value
+                if(un.length<5 || un.lenght>10){
+                    document.getElementById("s1").innerHTML="Name should be 5-10 ch only"
+                    return false;
+                }
+                return true;
+            }
+
+            function validatePass(){
+                var pass=document.getElementById("pass").value
+                if(pass.length<7){
+                    document.getElementById("s2").innerHTML="Password must be greater then 7 character"
+                    return false;
+                }
+                return true;
+            }
+
+            function validate(){
+                if(validateName() && validatePass()){
+                    return true;
+                }
+                return false;
+            }
+        </script>
+    </head>
+
+    <body>
+       <form onsubmit="return validate()">
+        username: <input  type="text" id="uname" required><span id="s1"></span><br>
+        Password: <input  type="password" id="pass" required><span id="s2"></span><br>
+        <input type="submit">
+       </form>
+    </body>
+
+</html>
