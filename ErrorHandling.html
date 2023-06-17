@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script>
+            function factorial(x) {
+                // If the input argument is invalid,throw an exception!
+                if(x<0)
+                    throw new Error("X must not be negative");
+
+                        var f = 1;
+                        for (; x > 1; x--) {
+                            f *= x;
+                        }
+                        
+                        return f;
+                
+            }
+        </script>
+    </head>
+
+    <body>
+        <script>
+           var a= factorial(-10);
+           console.log(a)
+        </script>
+        
+    </body>
+</html>
