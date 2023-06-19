@@ -1,0 +1,39 @@
+<html>
+
+    <head>
+        <script>
+            function getData(){
+
+                // Step-1: Create an XHR object
+                 var xhr=new XMLHttpRequest();
+
+                 // Step-2: obtain a connection to the server
+                 xhr.open("get" , "http://jsonplaceholder.typicode.com/todos" , true ) 
+
+                 //step-3: send the request
+                 xhr.send()
+                 
+                 //step-4: callback func that can handle the response
+                 // onreadystate change property has all the updated state changes to the browser
+                 xhr.onreadystatechange= function(){
+
+                    if(xhr.status== 200 && xhr.readyState==4){
+                        //response is a property which accepts the response from the server
+                        alert(xhr.response)
+                    }
+
+
+
+                 }  //callbackfunction (bcz called as a result of some event)
+
+
+
+            }
+        </script>
+    </head>
+
+
+    <body>
+        <input type="button" value="get data" onclick="getData()">
+    </body>
+</html>
