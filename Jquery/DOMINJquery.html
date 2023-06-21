@@ -1,0 +1,24 @@
+// we hae used append method but append method has an another avatar called as appendp() and many more methods to perform DOM manuplation in jquery
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+ <script>
+  $(document).ready(function() {
+    $("#btn").click(function(){
+      $("p").append("<p>Wala</p>")
+    })
+  })
+ </script>
+</head>
+
+<body>
+  <h1>Welcome to jquery</h1>
+  <p>This is para-1</p>
+
+  <input type="button" id="btn" value="Add Para">
+</body>
+
+</html>
