@@ -1,0 +1,30 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tmpl/1.0.0/jquery.tmpl.min.js"></script>
+     -->
+
+
+     <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                var fname=$("#fname").val();
+                var lname=$("#lname").val();
+
+                $("#s1").html(fname+lname)
+            })
+        })
+     </script>
+
+</head>
+
+<body>
+
+   Firstname: <input id="fname"><br>
+   LastName: <input id="lname"><br>
+   <input type="button" id="btn" value="show">
+   <span id="s1"></span>
+
+    
+</body>
+</html>
