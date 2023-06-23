@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Plugin Demo</title>
+        <script src="Highlighter.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("p").highlight();
+            })
+        </script>
+    </head>
+
+    <body>
+        <h3>Some Header</h3>
+        <p> Para-1</p>
+        <div>Div-1</div>
+    </body>
+
+
+    <script>
+        $.fn.highlight=function(){
+    this.css("background-color","yellow");
+    return this; //not required, but highly recommended
+}
+    </script>
+</html>
