@@ -1,5 +1,6 @@
 let fs=require('fs')
 
+/*
 fs.readFile('myfile.txt',function(err,data){
 
         if(err){
@@ -10,3 +11,10 @@ fs.readFile('myfile.txt',function(err,data){
         }
 
 });
+
+*/
+
+
+fs.writeFile("stud.txt","myur \n mohit minal sai vivek",function(err){
+    console.log(err)
+})
