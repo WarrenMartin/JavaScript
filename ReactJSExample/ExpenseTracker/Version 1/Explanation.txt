@@ -1,0 +1,15 @@
+Now version 1 is we will have a hireachy that is the app.js is the root component. and the ExpenseItem component of reactJS will be child of app.js
+
+App.js will have all the expense details which will be passed to expenseItem, ExpenseItem is kind of a temlate which can be reused again n again " <ExpenseItem/>
+
+
+Now the date of expense can be formed another reactjs component, and this component is a child of ExpenseItem component 
+
+
+So in short 
+
+app.js ( root component)
+    |
+ExpenseItem
+    |
+ExpenseDate
