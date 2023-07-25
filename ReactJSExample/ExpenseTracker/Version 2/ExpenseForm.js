@@ -5,7 +5,7 @@ const ExpenseForm = () =>{
 
 
 
-    const [inputTitle, setInputTitle]=useState(" ")
+    const [inputTitle, setInputTitle]=useState("")
     const [inputAmount,setInputAmount]=useState("")
     const [inputDate,setInputDate]=useState("")
 
@@ -22,7 +22,7 @@ const ExpenseForm = () =>{
         setInputDate(event.target.value)
     }
 
-    const subbmitHandler =(event) => {
+    const submitHandler =(event) => {
         event.preventDefault();
 
         const expenseData={
